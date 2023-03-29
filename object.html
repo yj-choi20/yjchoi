@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> </title>
+    </head>
+    <body>
+        <script>
+            var objectStudy =
+            {
+                // property
+                "name": "yoonjichoi",
+                "dream": "more bigger house",
+                "previous home": "pyeongtaek"
+            };
+            document.write('<h1>Object</h1>');
+            document.write('<h2>'+objectStudy.name+'</h2>')
+            document.write('<h2>'+objectStudy['previous home']+'</h2>');
+            objectStudy.birthday = "931109";
+            document.write('<h2>'+objectStudy.birthday+'</h2>')
+            objectStudy['favorite animal'] = "dog";
+            document.write('<h2>'+objectStudy['favorite animal']+'</h2>');
+            /*
+            for (var key in objectStudy)
+            {
+                document.write(key+': '+objectStudy[key]+'<br>')
+            }
+            */
+           // method
+            objectStudy.display = function()
+            {
+                for (var key in this)
+                {
+                    if((typeof this[key])==="function")
+                    {
+                        continue;
+                    }
+                    document.write(key+': '+this[key]+'<br>');
+                }
+            }
+            objectStudy.display();
+        </script>
+    </body>
+</html>

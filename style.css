@@ -29,9 +29,25 @@ ol {
     margin: 0;
     padding: 20px;
 }
+ul {
+    border-right: 1px solid gray;
+    width: 100px;
+    margin: 0;
+    padding: 20px;
+}
 #grid ol {
     padding-left: 33px;
 }
+
+#btn {
+    border-right: 1px solid gray;
+    width: 140px;
+    text-align: center;
+    margin: 0;
+    padding: 0px;
+    padding-top: 20px;
+}
+
 body {
     margin: 0;
 }
