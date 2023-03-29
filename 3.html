@@ -16,6 +16,35 @@
 </head>
 <body>
   <h1><a href="index.html">WEB</a></h1>
+  <!--
+  <input type="button" value="Day" onclick="
+    document.querySelector('body').style.backgroundColor = 'white';
+    document.querySelector('body').style.color = 'black';">
+  
+  <input type="button" value="Night" onclick="
+    document.querySelector('body').style.backgroundColor = 'Black';
+    document.querySelector('body').style.color = 'white';">
+  -->
+  <input id="t_NDbtn" type="button" value="Night" onclick="
+    var target = document.querySelector('body').style;
+    if( document.querySelector('#t_NDbtn').value === 'Night' )
+    {
+      target.backgroundColor = 'black';
+      target.color = 'white';
+      this.value = 'Day';
+    }
+    else
+    {
+      /*
+      document.querySelector('body').style.backgroundColor = 'white';
+      document.querySelector('body').style.color = 'black';
+      document.querySelector('#t_NDbtn').value = 'Night';
+      */
+      target.backgroundColor = 'white';
+      target.color = 'black';
+      this.value = 'Night'
+    }
+  ">
   <div id="grid">
     <ol>
       <li><a href="1.html">HTML</a></li>
